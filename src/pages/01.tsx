@@ -22,13 +22,13 @@ export default function One() {
 
   return (
     <div className="flex items-center flex-col gap-5">
-      {/* <input
+      <input
         type="text"
         value={text}
         onChange={handleChange}
         className="border p-2"
       />
-      <p className="text-lg">入力中: {text}</p> */}
+      <p className="text-lg">入力中: {text}</p>
       <p className="text-2xl font-bold">{count}</p>
       <div className="flex gap-4">
         <button onClick={decrement}>-1</button>
