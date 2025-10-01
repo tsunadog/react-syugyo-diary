@@ -5,7 +5,7 @@ type dataProps = {
   status: "success";
 };
 
-export default function Two() {
+export default function TwoOld() {
   const [data, setData] = useState<dataProps | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -16,11 +16,14 @@ export default function Two() {
       setData(null);
       setLoading(true);
       setError(null);
+
       const res = await fetch("https://dog.ceo/api/breeds/image/random");
       if (!res.ok) throw new Error("Fetch failed");
       const json: dataProps = await res.json();
+
       setData(json);
-    } catch (err) {
+    } catch (error) {
+      console.log(error);
       setError("画像の取得に失敗しました");
     } finally {
       setLoading(false);
