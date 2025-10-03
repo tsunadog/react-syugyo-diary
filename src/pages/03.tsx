@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { useQuery } from "@tanstack/react-query";
 
 async function fetchRandomDog() {
@@ -37,9 +38,9 @@ export default function Three() {
         ) : null}
       </div>
 
-      <button onClick={handleRefetch} disabled={isFetching}>
+      <Button onClick={handleRefetch} disabled={isFetching}>
         別の画像を取得する
-      </button>
+      </Button>
     </div>
   );
 }

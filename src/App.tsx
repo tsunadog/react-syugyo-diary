@@ -5,6 +5,7 @@ import Index from "./Index";
 import Two from "./pages/02";
 import Three from "./pages/03";
 import TwoOld from "./pages/02_old";
+import Four from "./pages/04";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="02" element={<Two />} />
       <Route path="02_old" element={<TwoOld />} />
       <Route path="03" element={<Three />} />
+      <Route path="04" element={<Four />} />
     </Routes>
   );
 }

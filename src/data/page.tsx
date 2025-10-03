@@ -2,6 +2,7 @@ import React from "react";
 import One from "../pages/01.tsx";
 import Two from "../pages/02.tsx";
 import Three from "../pages/03.tsx";
+import Four from "../pages/04.tsx";
 
 type pageType = {
   path: string;
@@ -18,11 +19,16 @@ export const page: pageType[] = [
   {
     path: "02",
     page: <Two />,
-    title: "Day2:useEffect と依存配列",
+    title: "Day2:useEffectと依存配列",
   },
   {
     path: "03",
     page: <Three />,
     title: "Day3:TanStack QueryでAPIデータを取得",
+  },
+  {
+    path: "04",
+    page: <Four />,
+    title: "Day4:useReducerと型定義（TODOアプリ）",
   },
 ];

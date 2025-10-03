@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 
 export default function Two() {
@@ -18,7 +19,7 @@ export default function Two() {
     <div className="flex items-center flex-col gap-5">
       <p className="text-2xl font-bold">{count}</p>
       <div className="flex gap-4">
-        <button onClick={increment}>+1</button>
+        <Button onClick={increment}>+1</Button>
       </div>
     </div>
   );

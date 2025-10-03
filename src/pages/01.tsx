@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { useState } from "react";
 
 export default function One() {
@@ -22,7 +24,7 @@ export default function One() {
 
   return (
     <div className="flex items-center flex-col gap-5">
-      <input
+      <Input
         type="text"
         value={text}
         onChange={handleChange}
@@ -31,9 +33,11 @@ export default function One() {
       <p className="text-lg">入力中: {text}</p>
       <p className="text-2xl font-bold">{count}</p>
       <div className="flex gap-4">
-        <button onClick={decrement}>-1</button>
-        <button onClick={increment}>+1</button>
-        <button onClick={reset}>reset</button>
+        <Button onClick={decrement}>-1</Button>
+        <Button onClick={increment}>+1</Button>
+        <Button variant={"secondary"} onClick={reset}>
+          reset
+        </Button>
       </div>
     </div>
   );
