@@ -3,6 +3,7 @@ import One from "../pages/01.tsx";
 import Two from "../pages/02.tsx";
 import Three from "../pages/03.tsx";
 import Four from "../pages/04.tsx";
+import Five from "@/pages/05.tsx";
 
 type pageType = {
   path: string;
@@ -30,5 +31,10 @@ export const page: pageType[] = [
     path: "04",
     page: <Four />,
     title: "Day4:useReducerと型定義（TODOアプリ）",
+  },
+  {
+    path: "05",
+    page: <Five />,
+    title: "Day5:Context API + TypeScript 型の渡し方（テーマ切替アプリ）",
   },
 ];
