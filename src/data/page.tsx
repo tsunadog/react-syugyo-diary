@@ -37,4 +37,9 @@ export const page: pageType[] = [
     page: <Five />,
     title: "Day5:Context API + TypeScript 型の渡し方（テーマ切替アプリ）",
   },
+  {
+    path: "05",
+    page: <Five />,
+    title: "Day6:カスタムHookの作成（useLocalStorage）",
+  },
 ];
