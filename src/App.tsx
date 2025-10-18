@@ -8,6 +8,8 @@ import TwoOld from "./pages/02_old";
 import Four from "./pages/04";
 import { ThemeProvider } from "./context/ThemeProvider";
 import Five from "./pages/05";
+import UserDetail from "./pages/07";
+import UserList from "./pages/06";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="03" element={<Three />} />
         <Route path="04" element={<Four />} />
         <Route path="05" element={<Five />} />
+        <Route path="users" element={<UserList />} />
+        <Route path="users/:id" element={<UserDetail />} />
       </Routes>
     </ThemeProvider>
   );

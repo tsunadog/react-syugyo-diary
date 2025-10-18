@@ -4,6 +4,7 @@ import Two from "../pages/02.tsx";
 import Three from "../pages/03.tsx";
 import Four from "../pages/04.tsx";
 import Five from "@/pages/05.tsx";
+import UserList from "@/pages/06.tsx";
 
 type pageType = {
   path: string;
@@ -41,5 +42,10 @@ export const page: pageType[] = [
     path: "05",
     page: <Five />,
     title: "Day6:カスタムHookの作成（useLocalStorage）",
+  },
+  {
+    path: "users",
+    page: <UserList />,
+    title: "Day7:動的ルーティングとパラメータ型（ユーザ詳細ページ）",
   },
 ];
