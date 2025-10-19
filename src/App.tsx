@@ -10,6 +10,7 @@ import { ThemeProvider } from "./context/ThemeProvider";
 import Five from "./pages/05";
 import UserDetail from "./pages/07";
 import UserList from "./pages/06";
+import Eight from "./pages/08";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="05" element={<Five />} />
         <Route path="users" element={<UserList />} />
         <Route path="users/:id" element={<UserDetail />} />
+        <Route path="08" element={<Eight />} />
       </Routes>
     </ThemeProvider>
   );
