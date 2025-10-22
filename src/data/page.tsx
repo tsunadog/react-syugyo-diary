@@ -6,6 +6,7 @@ import Four from "../pages/04.tsx";
 import Five from "@/pages/05.tsx";
 import UserList from "@/pages/06.tsx";
 import Eight from "@/pages/08.tsx";
+import Nine from "@/pages/09.tsx";
 
 type pageType = {
   path: string;
@@ -52,6 +53,11 @@ export const page: pageType[] = [
   {
     path: "08",
     page: <Eight />,
-    title: "Day8:React Hook Form の導入（ログインフォーム）",
+    title: "Day8:React Hook Form の導入（ユーザー登録フォーム）",
+  },
+  {
+    path: "09",
+    page: <Nine />,
+    title: "Day9:React Hook Form + Zod（ユーザー登録フォーム）",
   },
 ];

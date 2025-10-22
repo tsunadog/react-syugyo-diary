@@ -11,6 +11,7 @@ import Five from "./pages/05";
 import UserDetail from "./pages/07";
 import UserList from "./pages/06";
 import Eight from "./pages/08";
+import Nine from "./pages/09";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="users" element={<UserList />} />
         <Route path="users/:id" element={<UserDetail />} />
         <Route path="08" element={<Eight />} />
+        <Route path="09" element={<Nine />} />
       </Routes>
     </ThemeProvider>
   );
